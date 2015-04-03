@@ -1,0 +1,45 @@
+@import url("normalize.css");
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #666;
+  text-align: center; }
+
+a {
+  text-decoration: none;
+  color: #666; }
+
+nav * {
+  display: inline-block;
+  margin-right: 20px; }
+
+.chart {
+  border-left: 1px solid #666;
+  border-bottom: 1px solid #666;
+  margin: 0 auto;
+  position: relative; }
+  .chart .y {
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+    position: absolute;
+    bottom: 0px;
+    padding: 5px; }
+  .chart .x {
+    position: absolute;
+    width: 100%;
+    padding: 5px;
+    top: 110%; }
+  .chart .bar {
+    position: absolute;
+    background: #9351a6;
+    bottom: 0px; }
+  .chart .bar:nth-child(even) {
+    background: #be4c39; }
+  .chart label {
+    position: absolute;
+    font-size: 10px;
+    bottom: -15px;
+    width: 100%;
+    left: 0px;
+    margin: 0 auto; }
+
+/*# sourceMappingURL=graphstyles.css.map */

@@ -10,11 +10,11 @@
  		{{ xAxis }}
       </div>
       
-      <div class="bar" ng-repeat="bar in data"
+      <div class="bar" ng-repeat="bar in dbData"
       style="
-      	height: {{ bar.value / maxtwo  * height }}px;
-      	width: {{ width / data.length - 5 }}px;
-      	left: {{ $index / data.length * width}}px;"
+      	height: {{ bar.value / max  * height }}px;
+      	width: {{ width / dbData.length - 5 }}px;
+      	left: {{ $index / dbData.length * width}}px;"
       	>
       	<label>{{bar.label}}</label>
       </div>
