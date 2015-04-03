@@ -1,4 +1,18 @@
-    
+graphApp.controller("graphControllers", function( $scope ){
+
+  $scope.width = 600;
+  $scope.height = 250;
+
+  $scope.yAxis = 'Booty Haul';  
+  $scope.xAxis = '2015';
+
+  // $scope.max = Math.max(($scope.data).map(function(obj){
+  //   return obj.value;
+  // }));
+
+  // console.log($scope.max)
+
+  $scope.maxtwo = 342;
     // Data 
     $scope.data = [
     {
@@ -51,7 +65,7 @@
     }
     ];
 
-
+});
 
 
 

@@ -9,3 +9,47 @@ a {
   text-decoration: none;
   color:#666;
 }
+nav * {
+	display: inline-block;
+	margin-right: 20px;
+}
+.chart {
+	border-left: 1px solid #666;
+	border-bottom: 1px solid #666;
+	margin: 0 auto;
+	position: relative;
+
+	.y {
+ 	transform: rotate(-90deg);
+ 	transform-origin: bottom left;
+ 	position: absolute;
+ 	bottom: 0px;
+ 	padding: 5px;
+	}
+
+	.x {
+		position: absolute;
+		width: 100%;
+		padding: 5px;
+		top: 110%;
+	}
+	.bar {
+		position: absolute;
+		background: #9351a6;
+		bottom: 0px;
+	}
+
+	.bar:nth-child(even) {
+		background: #be4c39;
+	}
+
+	label {
+		position: absolute;
+		font-size: 10px;
+		bottom: -15px;
+		width: 100%;
+		left: 0px;
+		margin: 0 auto;
+	}
+}
+

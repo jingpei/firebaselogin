@@ -1,0 +1,23 @@
+  <div class="wrap">
+    <div class="chart" style="width: {{ width }}px; height: {{ height }}px;">
+
+
+      <div class="y">
+      	{{ yAxis }}
+      </div>
+      
+      <div class="x">
+ 		{{ xAxis }}
+      </div>
+      
+      <div class="bar" ng-repeat="bar in data"
+      style="
+      	height: {{ bar.value / maxtwo  * height }}px;
+      	width: {{ width / data.length - 5 }}px;
+      	left: {{ $index / data.length * width}}px;"
+      	>
+      	<label>{{bar.label}}</label>
+      </div>
+    
+    </div>
+   </div>
